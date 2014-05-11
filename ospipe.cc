@@ -15,6 +15,12 @@ static Handle<Value> OsPipe(const Arguments& args)
     
     int ok = pipe(pipefd);
 
+    if (ok == -1) {
+	ThrowException(Exception::Error(String::New("pipe(2) returned error")));
+	return scope.Close(Undefined());
+    }
+
+
     Local<Array> arr = Array::New();
 
     arr->Set(0,Number::New(pipefd[0]));
