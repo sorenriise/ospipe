@@ -6,7 +6,7 @@ Presenting pipe `man 2 pipe`
 This interface simply give the ability to call the Linux `pipe` system call.  It will return a pair of file descriptors, like;
 
 ```node
->  require('./pipe').ospipe();
+>  require('ospipe').ospipe();
 [ 10, 11 ]
 ```
 
