@@ -1,11 +1,9 @@
 {
   "name": "ospipe",
-  "version": "0.0.2",
-  "dependencies": {
-  },
+  "version": "0.0.3",
+  "dependencies": {},
   "engines": {
     "node": "0.10.x"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
